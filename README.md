@@ -69,7 +69,7 @@ as the segmentation labels to a pickle file.
   - ```root_dir``` should point to the root directory of the SemanticKITTI dataset.
   - ```out_dir``` should point to the desired output directory to store the pickle files.
 
-## UDA Experiments
+## Cross-Modal UDA Experiments
 
 You can run the training with
 ```
