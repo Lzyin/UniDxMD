@@ -8,7 +8,7 @@
 ### Installation
 
 The implementation runs on
-- Python 3.10
+- Python 3.10.13
 - Torch 1.11.0
 - Torchvision 0.12.0
 - CUDA 11.4
