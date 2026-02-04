@@ -1,7 +1,7 @@
 # UniDxMD: Towards Unified Representation for Cross-Modal Unsupervised Domain Adaptation in 3D Semantic Segmentation [ICCV 2025]
 
 ## Overview
-<img src="assets/framework.png">
+![](assets/framework.png)
 
 ## Preparation
 
