@@ -15,12 +15,14 @@ The implementation runs on
 - [Spatial Sparse Convolution Library (SpConv 2.1)](https://github.com/traveller59/spconv)
 - [nuscenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
 
-For the 3D network, we use SpConv, following  (https://github.com/Barcaaaa/UniDSeg), as it is faster to compute. SpConv can be installed/compiled as follows:
-
+For the 3D network, we use SpConv, following UniDSeg(https://github.com/Barcaaaa/UniDSeg), as it is faster to compute. SpConv can be installed/compiled as follows:
+```
+git clone https://github.com/traveller59/spconv, cd ./spconv, pip install -e .
+```
 ### Dataset
 
 NuScenes-Lidarseg:
-- Please download the Full dataset (v1.0) from the [NuScenes website](https://www.nuscenes.org/) and extract it.
+- Please download the Full dataset from the [NuScenes website](https://www.nuscenes.org/) and extract it.
 - Please edit the script UniDxMD/data/nuscenes_lidarseg/preprocess.py as follows and then run it.
   - ```root_dir``` should point to the root directory of the NuScenes dataset.
   - ```out_dir``` should point to the desired output directory to store the pickle files.
