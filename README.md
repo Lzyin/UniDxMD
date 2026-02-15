@@ -5,7 +5,7 @@
 
 ## Preparation
 
-### Installationpng
+### Installation
 
 The implementation runs on
 - Python 3.10.13
