@@ -1,7 +1,7 @@
 # UniDxMD: Towards Unified Representation for Cross-Modal Unsupervised Domain Adaptation in 3D Semantic Segmentation [ICCV 2025]
 
 ## Overview
-![](assets/framework.png)
+<img src="assets/framework.png" alt="framework" width="480">
 
 ## Preparation
 
@@ -74,24 +74,16 @@ as the segmentation labels to a pickle file.
 You can run the training with
 ```
 $ cd <root dir of this repo>
-$ python UniDxMD/train_UniDxMD.py --cfg=configs/nuscenes_lidarseg/usa_singapore/uda/UniDxMD.yaml
+$ python UniDxMD/main.py --cfg=configs/nuscenes_lidarseg/usa_singapore/uda/UniDxMD.yaml
 ```
 
 You can start the trainings on the other UDA scenarios (nuScenes: Day/Night, v.KITTI/Sem.KITTI and A2D2/Sem.KITTI) analogously:
 ```
-$ python UniDxMD/train_UniDxMD.py --cfg=configs/nuscenes_lidarseg/day_night/uda/UniDxMD.yaml
-$ python UniDxMD/train_UniDxMD.py --cfg=configs/virtual_kitti_semantic_kitti/uda/UniDxMD.yaml
-$ python UniDxMD/train_UniDxMD.py --cfg=configs/a2d2_semantic_kitti/uda/UniDxMD.yaml
+$ python UniDxMD/main.py --cfg=configs/nuscenes_lidarseg/day_night/uda/UniDxMD.yaml
+$ python UniDxMD/main.py --cfg=configs/virtual_kitti_semantic_kitti/uda/UniDxMD.yaml
+$ python UniDxMD/main.py --cfg=configs/a2d2_semantic_kitti/uda/UniDxMD.yaml
 ```
-## Testing
-You can provide which checkpoints you want to use for testing. We used the ones
-that performed best on the validation set during training (the best val iteration for 2D and 3D is
-shown at the end of each training). Note that `@` will be replaced
-by the output directory for that config file. For example:
-```
-$ cd <root dir of this repo>
-$ python UniDxMD/test.py --cfg=configs/nuscenes_lidarseg/usa_singapore/uda/UniDxMD.yaml @/best_model_2d.pth @/best_model_3d.pth
-```
+
 ## Acknowledgements
 
 Code is built based on [xMUDA_journal](https://github.com/valeoai/xmuda_journal) and [UniDSeg](https://github.com/Barcaaaa/UniDSeg).
